@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamehub.gg - video game store</title>
+
+    <meta name="description" content="Gamehub.gg is a PC games store from the largest video gaming community. Low prices all year round and instant delivery of keys. Hey, buy it!">
+    <meta name="language" content="en">
+    <meta name="keywords" content="Buy games,Buy videogames,Discounts,Steam Keys, Origin Keys, uPlay Keys, PC Keys,Keystogames,Keys,Store">
+    <meta name="copyright" content="Gamehub">
+
+    <!-- meta tags open graph (og) -->
+    <meta name="og:title" content="Gamehub.gg - video game store">
+    <meta name="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta name="og:image" content="img/meta_og_img.jpeg">
+    <meta name="og:type" content="store.games">
+     
+    <!-- cu link specificam o conexiune cu resursa externa -->
+    <link rel="icon" href="img/logo.jpeg">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body >
+    <header>
+        <nav>
+            <div id="div_logo">
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="http://127.0.0.1:5501/index.html"><img id="img" class="logo" src="img/true.png"></a>
+            </div>
+            <div id="div_ul">
+                <ul id="ul">
+                    <li><a class="a" href="#">Catalog</a></li>
+                    <li><a class="a" href="#">New items</a></li>
+                    <li><a class="a" href="#">Discounts</a></li>
+                    <li><a class="a" href="#">About us</a></li>
+                    <li><a class="a" href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="join_search_cos">
+                
+                <div class="icon" id="shoppigCart">
+                    <span>0</span>
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;" id="shoppigCartImg"></i>
+                </div>
+
+                <div class="icon" onclick="openSearch()" style="padding: 10px 0px 0px 0px;">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i>
+                </div>
+                <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                    <div class="overlay-content">
+                        <form>
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa-solid fa-magnifying-glass fa-xl"
+                             style="color: #000000;"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <a href="login_singup.html"><button class="join">JOIN</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="listCart">
+                <div class="box">
+                    
+                </div>
+            </div>
+            <div class="btn">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">CHECK OUT</button>
+            </div>
+        </div>
+
+
+        <div id="divulvideo">
+            <h1 id="titlulvideo">IN GAMES<br>WE TRUST</h1> 
+            <video autoplay loop muted id="videoFundal">
+                <source src="img/Render-1920-x-350_1.mp4">
+            </video>
+        </div>
+
+
+        <article>
+            <div id="card-area">
+                <div class="wrapper">
+                    <h1 id="Catalog">Catalog</h1>
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="img/wolf/wolf_card.jpg">
+                            <div class="overlaycard">
+                                <h3>Wolfenstein: The New Order</h3>
+                                <p>$3.99</p>
+                                <button class="addCart">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <footer style="z-index: 0;">
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">New items</a></li>
+                    <li><a href="#">Discounts</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p>© 2023 - 2024 Gamehub Key Store</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="js/script.js"></script>
+
+
